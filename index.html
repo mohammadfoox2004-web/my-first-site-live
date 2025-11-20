@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #e7e8ea;
+            font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card{
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1{
+            color: #2c3e50;
+            font-size: 24px;
+        }
+        button{
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        button:hover{
+            background-color: #0c3660;
+        } 
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a{
+            text-decoration: none;
+            color: #7f8c8d;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .social-links a:hover {
+            color: #3498db;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="IMG-20251119-WA0051.jpg" alt="صورتي الشخصية" class="profile-pic">
+        <h1> مرحبا انا محمد من السودان</h1>
+        <p>مطور مواقع مبتدئ و احب ان اتعلم التكنولوجيا</p>
+        <button id="mybtn">تواصل معي</button>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/mohammadosama.eltib" target="_blank">فيسبوك</a>
+        <a href="+249125409639" target="_blank">واتساب</a>
+        <a href="https://www.instagram.com/mo_max999?igsh=ejMxcGZIMTdmYIx" target="_blank">انستقرام </a>
+    </div>
+    </div>
+
+   <script>
+        const btn =
+        document.getElementById('mybtn');
+        btn.addEventListener('click',function() {
+            alert('شكرا لاهتمامك اول تجربة لي مع JavaScript');
+            btn.style.backgroundColor="#27ae60";
+            btn.textContent="تم الارسال";
+        });
+    </script>
+</body>
+</html>
