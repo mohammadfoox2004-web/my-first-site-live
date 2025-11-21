@@ -10,14 +10,14 @@ body{
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
             text-align: center;
-            width: 300px;
+            max-width: 300px;
 
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         h1{
-            color: #2c3e50;
+            color: #548ec8;
             font-size: 27px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -51,16 +51,16 @@ body{
             margin-top: 20px;
 
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            width: 80%;
+            width: 100%;
         }
         .social-links a{
             text-decoration: none;
-            color: #9b9ba0;
+            color: #050607;
             margin: 0 10px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 20px;
         }
         .social-links a:hover {
             color: #3498db;
@@ -106,3 +106,39 @@ body{
         .dark-mode button:hover{
             background-color: #1a387e;
         }
+        /* ---------------------------------- */
+/* تنسيق فاصل "أو" */
+/* ---------------------------------- */
+.divider {
+    display: flex; /* تفعيل Flexbox لتنظيم العناصر في صف واحد */
+    align-items: center; /* توسيط عمودي للعناصر */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 0; /* مسافة من فوق وتحت وتوسيط أفقي */
+    width: 90%;
+    max-width: 380px; /* جعل العرض مطابقاً تقريباً للبطاقة */
+    color: #888; /* لون رمادي للنص */
+    font-size: 0.9em;
+    justify-self: center;
+}
+
+.divider hr {
+    flex-grow: 1; /* جعل الخط ينمو ليغطي المساحة المتبقية */
+    border: none; /* إزالة الحدود الافتراضية */
+    border-top: 1px solid #ccc; /* إضافة خط رقيق بلون رمادي فاتح */
+    margin: 0 10px; /* مسافة بسيطة بين الخط وكلمة "أو" */
+}
+
+.dark-mode .divider {
+    color: #aaa;
+}
+
+.dark-mode .divider hr {
+    border-top: 1px solid #444; /* خط داكن في الوضع الداكن */
+}
+.dark-mode .social-links a{
+    color: #ffffff;
+}
+.dark-mode .social-links a:hover{
+    color: #635c5c;
+}
