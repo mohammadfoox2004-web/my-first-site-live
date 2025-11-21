@@ -97,7 +97,7 @@ body{
             cursor: pointer;
         }
         #mode-toggle:hover{
-            background-color: #f0f0f0;
+            background-color: #0c589e;
         }
         .dark-mode{
             background-color: #1a1a1a !important;
@@ -130,5 +130,5 @@ body{
     border: none;
 }
 .dark-mode #mode-toggle:hover{
-    background-color: #444;
+    background-color: #03338b;
 }
