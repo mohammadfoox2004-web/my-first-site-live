@@ -1,0 +1,108 @@
+body{
+            background-color: #f0f0f0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .card{
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
+            text-align: center;
+            width: 300px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            color: #2c3e50;
+            font-size: 27px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        p{
+            font-size: 15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 15px;
+        }
+        button:hover{
+            background-color: #0c3660;
+        } 
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            margin-top: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+        .social-links a{
+            text-decoration: none;
+            color: #9b9ba0;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .social-links a:hover {
+            color: #3498db;
+        }
+        @media (max-width:600px) {
+            .card{
+                width: 90%;
+                padding: 15px;
+            }
+            h1{
+                color: #418edb;
+                font-size: 1,5em;
+            }
+            btn{
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+        #mode-toggle{
+            position:absolute;
+            top: 20px;
+            left: 20px;
+            border: none;
+            font-size: 12px;
+            font-family:monospace ;
+            cursor: pointer;
+        }
+        .dark-mode{
+            background-color: #1a1a1a !important;
+            color: #f0f0f0;
+        }
+        .dark-mode .card{
+            background-color: #2c2c2c;
+            box-shadow: 0 4px 10px rgba(75, 73, 73, 0.507);
+        }
+        .dark-mode h1{
+            color: #3498db;
+        }
+        .dark-mode button{
+            background-color: #4579b5;
+            border-radius: 20px;
+        }
+        .dark-mode button:hover{
+            background-color: #1a387e;
+        }
