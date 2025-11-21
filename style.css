@@ -25,7 +25,9 @@ body{
             font-size: 15px;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        button{
+        #mybtn{
+            display: inline-block;
+            text-decoration: none;
             background-color: #3498db;
             color: white;
             border: none;
@@ -36,7 +38,7 @@ body{
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin-top: 15px;
         }
-        button:hover{
+        #mybtn:hover{
             background-color: #0c3660;
         } 
         .profile-pic {
@@ -84,9 +86,18 @@ body{
             top: 20px;
             left: 20px;
             border: none;
+            background-color: #3981f4;
+            color: #010b11;
+            border-radius: 16px;
+            padding: 8px 12px;
+            transform: all 0.3s;
+            z-index: 10;
             font-size: 12px;
             font-family:monospace ;
             cursor: pointer;
+        }
+        #mode-toggle:hover{
+            background-color: #f0f0f0;
         }
         .dark-mode{
             background-color: #1a1a1a !important;
@@ -99,46 +110,25 @@ body{
         .dark-mode h1{
             color: #3498db;
         }
-        .dark-mode button{
+        .dark-mode #mybtn{
             background-color: #4579b5;
             border-radius: 20px;
         }
-        .dark-mode button:hover{
+        .dark-mode #mybtn:hover{
             background-color: #1a387e;
         }
-        /* ---------------------------------- */
-/* تنسيق فاصل "أو" */
-/* ---------------------------------- */
-.divider {
-    display: flex; /* تفعيل Flexbox لتنظيم العناصر في صف واحد */
-    align-items: center; /* توسيط عمودي للعناصر */
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin: 0; /* مسافة من فوق وتحت وتوسيط أفقي */
-    width: 90%;
-    max-width: 380px; /* جعل العرض مطابقاً تقريباً للبطاقة */
-    color: #888; /* لون رمادي للنص */
-    font-size: 0.9em;
-    justify-self: center;
-}
 
-.divider hr {
-    flex-grow: 1; /* جعل الخط ينمو ليغطي المساحة المتبقية */
-    border: none; /* إزالة الحدود الافتراضية */
-    border-top: 1px solid #ccc; /* إضافة خط رقيق بلون رمادي فاتح */
-    margin: 0 10px; /* مسافة بسيطة بين الخط وكلمة "أو" */
-}
-
-.dark-mode .divider {
-    color: #aaa;
-}
-
-.dark-mode .divider hr {
-    border-top: 1px solid #444; /* خط داكن في الوضع الداكن */
-}
 .dark-mode .social-links a{
     color: #ffffff;
 }
 .dark-mode .social-links a:hover{
     color: #635c5c;
+}
+.dark-mode #mode-toggle{
+    background-color: #6483d9;
+    color: #f0f0f0;
+    border: none;
+}
+.dark-mode #mode-toggle:hover{
+    background-color: #444;
 }

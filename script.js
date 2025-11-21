@@ -1,20 +1,15 @@
-// 🌟 1. تعريف المتغيرات أولاً (الترتيب مهم جداً!) 🌟
+// 🌟 كود الوضع الداكن فقط 🌟
 
-// متغيرات الوضع الداكن
+// تعريف المتغيرات
 const toggleButton = document.getElementById('mode-toggle');
 const body = document.body;
-// يجب أن يأتي modeIcon بعد toggleButton
 const modeIcon = toggleButton.querySelector('i'); 
 
-// متغيرات زر التواصل
-const btn = document.getElementById('mybtn');
-
-
-// كود الوضع الداكن (تبديل الأيقونات)
+// مستمع حدث الضغط (Click Listener)
 toggleButton.addEventListener('click', function() {
     body.classList.toggle('dark-mode');
 
-    // تبديل الأيقونات
+    // تبديل الأيقونات (شمس ☀️ / قمر 🌙)
     if (body.classList.contains('dark-mode')) {
         // الوضع الداكن: إظهار القمر
         modeIcon.classList.remove('fa-sun');
@@ -25,4 +20,3 @@ toggleButton.addEventListener('click', function() {
         modeIcon.classList.add('fa-sun');
     }
 });
-        
