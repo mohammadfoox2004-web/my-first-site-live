@@ -10,17 +10,6 @@ const modeIcon = toggleButton.querySelector('i');
 const btn = document.getElementById('mybtn');
 
 
-// ----------------------------------------------------
-// 2. مستمعات الأحداث (Event Listeners)
-
-// كود زر التواصل (alert)
-btn.addEventListener('click', function() {
-    alert('تم استلام رسالتك , سنرد عليك في اقرب وقت ممكن');
-    btn.style.backgroundColor = "#27ae60";
-    btn.textContent = "تم الارسال";
-});
-
-
 // كود الوضع الداكن (تبديل الأيقونات)
 toggleButton.addEventListener('click', function() {
     body.classList.toggle('dark-mode');
